@@ -63,7 +63,7 @@ if page == "🏠 Price Prediction":
 
     if st.session_state["show_image"]:
         try:
-            mobiles_img = Image.open("mobiles.png")
+            mobiles_img = Image.open("app/mobiles.png")
             st.image(mobiles_img, use_container_width=True, caption="Mobile Price Prediction Dashboard")
         except FileNotFoundError:
             st.warning("⚠️ 'mobiles.png' not found in your project folder.")
@@ -76,10 +76,10 @@ if page == "🏠 Price Prediction":
     )
 
     model_paths = {
-        "XGBoost": "xgboost_model.pkl",
-        "Stacking Ensemble": "stacking_ensemble_model.pkl",
-        "Random Forest": "random_forest_model.pkl",
-        "Linear Regression": "linear_regression_model.pkl"
+        "XGBoost": "app/xgboost_model.pkl",
+        "Stacking Ensemble": "app/stacking_ensemble_model.pkl",
+        "Random Forest": "app/random_forest_model.pkl",
+        "Linear Regression": "app/linear_regression_model.pkl"
     }
 
     try:
