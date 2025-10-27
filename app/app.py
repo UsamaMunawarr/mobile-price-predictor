@@ -306,10 +306,10 @@ elif page == "📈 Model Evaluation":
     """)
 
     models = {
-        "XGBoost": "xgboost_model.pkl",
-        "Stacking Ensemble": "stacking_ensemble_model.pkl",
-        "Random Forest": "random_forest_model.pkl",
-        "Linear Regression": "linear_regression_model.pkl"
+        "XGBoost": "app/xgboost_model.pkl",
+        "Stacking Ensemble": "app/stacking_ensemble_model.pkl",
+        "Random Forest": "app/random_forest_model.pkl",
+        "Linear Regression": "app/linear_regression_model.pkl"
     }
 
     if "Price_PKR" in df.columns:
