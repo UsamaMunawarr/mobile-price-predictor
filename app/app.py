@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 # Load Data & Models
 # ---------------------------
 @st.cache_data(ttl=3600)
-def load_data(path="mobiles_prices_prediction.csv"):
+def load_data(path="app/mobiles_prices_prediction.csv"):
     return pd.read_csv(path)
 
 @st.cache_resource
